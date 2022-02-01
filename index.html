@@ -89,6 +89,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
+	
+<footer class="w3-bottom w3-container w3-flat-carrot">			<!--INSERTED FOOTER-->
+	<p>DIY!</p>
 
 <div class=page id=one>
 	<div id="header" class="w3-container w3-flat-carrot">
@@ -97,9 +100,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
     	<div id="content" class="w3-container">
         <p> Are your eyes watery or itchy?</p> 				<!-- INSTERED QUESTION ONE-->
-	<a href="#two" class="w3-btn w3-black">Yes</a>			<!-- BUTTON ATTEMPT--> 
-		<a href="#two" class="w3-btn w3-black">No</a>		<!-- NO BUTTON ATTEMPT-->
-	<div 
+	<a href="#two" onclick="allergyAdd();" class="w3-btn w3-black">Yes</a>			<!-- BUTTON ATTEMPT--> <!--ADDED JAVA SCRIPT BUTTON FUNCTION-->
+		<a href="#two" onclick="coldAdd();" class="w3-btn w3-black">No</a>		<!-- NO BUTTON ATTEMPT--> <!--ADDED JAVA SCRIPT BUTTON FUNCTION-->
+	</div><!--/content-->
  </div>
 
 <footer class="w3-bottom w3-container w3-flat-carrot">			<!--INSERTED FOOTER-->
@@ -113,9 +116,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<div id="content" class="w3-container">
 	<p> Do you have a fever?</p>         			<!-- INSERTED QUESTION TWO-->
-	<a href="#three" class="w3-btn w3-black">Yes</a>		<!-- YES BUTTON-->
-		<a href="#three" class="w3-btn w3-black">No</a>		<!-- NO BUTTON-->
-	</div>
+	<a href="#three" onclick="allergyAdd();" class="w3-btn w3-black">Yes</a>		<!-- YES BUTTON--> <!--ADDED JAVA SCRIPT BUTTON FUNCTION-->
+		<a href="#three" onclick="coldAdd();" class="w3-btn w3-black">No</a>		<!-- NO BUTTON-->  <!--ADDED JAVS SCRIPT BUTTON FUNCTION-->
+	</div><!--/content-->
 <div/>
 
 <footer class="w3-bottom w3-container w3-flat-carrot">		<!--INSERTED FOOTER-->
@@ -129,9 +132,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<div id"content" class="w3-container">
 	<p> Do you have a sore throat?</p>			<!--INSERTED QUESTION THREE-->
-	<a href="#four" class="w3-btn w3-black">Yes</a>		<!--YES BUTTON-->
-		<a href="four" class="w3-btn w3-black">No</a>	<!--NO BUTTON-->
-	</div>							<!--END OF QUESTION THREE-->
+	<a href="#four" onclick="allergyAdd();" class="w3-btn w3-black">Yes</a>		<!--YES BUTTON--> <!--ADDED JAVA SCRIPT BUTTON-->
+		<a href="four" onclick="coldAdd();" class="w3-btn w3-black">No</a>	<!--NO BUTTON--> <!--ADDED JAVA SCRIPT BUTTON-->
+	</div><!--/content-->							<!--END OF QUESTION THREE-->
 <div/>	
 	
 <footer class="w3-bottom w3-container w3-flat-carrot">		<!--INSERTED FOOTER-->
@@ -145,9 +148,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<div id"content" class="w3-container">
 	<p> Are your symptoms seasonal or chronic?</p>		<!--INSERTED QUESTION FOUR-->
-	<a href="five" class="w3-btn w3-black">Yes</a>		<!--YES BUTTON-->
-		<a href="five" class="w3-btn w3-black">No</a>	<!--NO BUTTON-->
-	</div>							<!--END OF QUESTION FOUR-->
+	<a href="five" onclick="allergyAdd();" class="w3-btn w3-black">Yes</a>		<!--YES BUTTON--> <!--ADDED JAVA SCRIPT BUTTON-->
+		<a href="five" onclick="coldAdd();" class="w3-btn w3-black">No</a>	<!--NO BUTTON--> <!--ADDED JAVA SCRIPT BUTTON-->
+	</div><!--/content-->							<!--END OF QUESTION FOUR-->
 		
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
