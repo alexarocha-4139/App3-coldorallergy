@@ -50,6 +50,13 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
             cold_count = cold_count + 1;
         }
 	
+	function resultsoutput(){
+		var resultText = document.getElementById("results");
+		var coldPercent = (cold_count/4) * 100
+		var allergyPercent = (allergy_count/4) * 100
+		resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "%" + "<br> Probability it is a cold =" + coldPercent;
+	}
+	
 	
 	
 
@@ -96,7 +103,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<footer class="w3-bottom w3-container w3-flat-carrot">			<!--INSERTED FOOTER-->
 	<p>DIY!</p>
 
-<div class=page id=one>
+<div class="page" id="one">
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 1</h1> 
 	</div>
@@ -113,7 +120,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 </footer>
 		
 <div class="page" id="two">
-	<div class="w3-container w3-flat-carrot">
+	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 2</h1>
 	</div>
 	
@@ -129,11 +136,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 </footer>
 	
 <div class="page" id="three">
-	<div class="w3-container w3-flat-carrot">
-		<h1>Question 3<h1>
+	<div id="header" class="w3-container w3-flat-carrot">
+		<h1>Question 3</h1>
 	</div>
 	
-	<div id"content" class="w3-container">
+	<div id="content" class="w3-container">
 	<p> Do you have a sore throat?</p>			<!--INSERTED QUESTION THREE-->
 	<a href="#four" onclick="allergyAdd();" class="w3-btn w3-black">Yes</a>		<!--YES BUTTON--> <!--ADDED JAVA SCRIPT BUTTON-->
 	<a href="#four" onclick="coldAdd();" class="w3-btn w3-black">No</a>	<!--NO BUTTON--> <!--ADDED JAVA SCRIPT BUTTON-->
@@ -145,11 +152,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 </footer>
 			
 <div class="page" id="four">
-	<div class="w3-container w3-flat-carrot">
-		<h1>Question 4<h1>
+	<div id="header" class="w3-container w3-flat-carrot">
+		<h1>Question 4</h1>
 	</div>
 	
-	<div id"content" class="w3-container">
+	<div id="content" class="w3-container">
 	<p> Are your symptoms seasonal or chronic?</p>		<!--INSERTED QUESTION FOUR-->
 	<a href="#five" onclick="allergyAdd();" class="w3-btn w3-black">Yes</a>		<!--YES BUTTON--> <!--ADDED JAVA SCRIPT BUTTON-->
 	<a href="#five" onclick="coldAdd();" class="w3-btn w3-black">No</a>	<!--NO BUTTON--> <!--ADDED JAVA SCRIPT BUTTON-->
@@ -159,15 +166,14 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<p>DIY!</p>
 </footer>
 
-<div class="page" id="five">			<!--ADDED RESULTS PAGE-->
-	<div class"w3-container w3-flat-carrot">
-		<h1>Question 5<h1>
+<div class="page" id="five">						<!--ADDED RESULTS PAGE-->
+	<div id="header" class"w3-container w3-flat-carrot">
+		<h1>Results</h1>
 	</div>
 	
-	<div id"content" class="w3-container">
-	<p> Are your symptoms seasonal or chronic?</p>
-	<a href="#six" onclick="allergyAdd();" class="w3-btn w3-black">Yes</a>
-	<a href="#six" onclick="coldAdd();" class="w3-btn w3-black">No</a>
+	<div id="content" class="w3-container">
+	<p> Click below to view results</p>
+	<a href="#results" onclick="resultsoutput();" class="w3-btn w3-black">Results</a>		<!--RESULTS BUTON-->
 	</div><!--content-->
 	
 	<footer class="w3-bottom w3-container w3-flat-carrot">
